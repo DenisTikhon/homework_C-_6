@@ -25,7 +25,8 @@ Console.WriteLine("введите число b2");
 double b2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("введите число k2");
 double k2 = Convert.ToInt32(Console.ReadLine());
-
+if ((k1 == k2) & (b1 == b2)) {Console.WriteLine("одинаковые прямые");} 
+else if (k1==k2) {Console.WriteLine("паралельные");} else {
 double x = (b2 - b1)/(k1 - k2);
 double y = k1*x+b1;
-Console.WriteLine("пересекутся в точке  X:" +x+ ", Y:"+ y);
+Console.WriteLine("пересекутся в точке  X:" +x+ ", Y:"+ y);}
