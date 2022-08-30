@@ -14,5 +14,18 @@ while (index < Nums.Length) {
 if (Nums[index] > 0) {count++;}
 index++;
 }
-Console.WriteLine(count);
+Console.WriteLine("Количество положительных чисел "+count);
 //задача 43
+Console.WriteLine("Задайте значения b1, k1, b2 и k2");
+Console.WriteLine("введите число b1");
+double b1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("введите число k1");
+double k1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("введите число b2");
+double b2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("введите число k2");
+double k2 = Convert.ToInt32(Console.ReadLine());
+
+double x = (b2 - b1)/(k1 - k2);
+double y = k1*x+b1;
+Console.WriteLine("пересекутся в точке  X:" +x+ ", Y:"+ y);
